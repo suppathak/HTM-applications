@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Properties of HTM &#8212; HTM Applications</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Anomaly Detection with HTM" href="markdown6.html" />
+    <link rel="prev" title="HTM Model Structure" href="markdown4.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">HTM Applications</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   HTM Applications
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Theory of Neo-Cortex
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown1.html">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     On
+    </span>
+    <span class="pre">
+     Intelligence
+    </span>
+   </code>
+   and
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     A
+    </span>
+    <span class="pre">
+     Thousands
+    </span>
+    <span class="pre">
+     Brains
+    </span>
+   </code>
+   by Jeff Hawkins - Summary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown2.html">
+   Pros and Cons of present AI
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Hierarchical Temporal Memory
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown3.html">
+   Hierarical Temporal Memory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown4.html">
+   HTM Model Structure
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Properties of HTM
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  The Science of Anomaly Detection
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown6.html">
+   Anomaly Detection with HTM
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown7.html">
+   Anomaly Detection Examples
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown8.html">
+   Performance of HTM compared to other techniques
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/markdown5.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/executablebooks/jupyter-book"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmarkdown5.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sparse-distributed-representations">
+   Sparse Distributed Representations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#encoding">
+   Encoding
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#spatial-pooling">
+   Spatial Pooling
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning">
+   Learning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#boosting">
+   Boosting
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#temporal-pooling">
+   Temporal pooling
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="properties-of-htm">
+<h1>Properties of HTM<a class="headerlink" href="#properties-of-htm" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sparse-distributed-representations">
+<h2>Sparse Distributed Representations<a class="headerlink" href="#sparse-distributed-representations" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://numenta.com/assets/pdf/biological-and-machine-intelligence/BaMI-SDR.pdf">Sparse distributed representations</a> is a core data structure of HTM. A complete mathematical explanations is in this <a class="reference external" href="https://arxiv.org/pdf/1503.07469.pdf">paper</a>.</p>
+<p>The reason why it is termed as Sparse is because of the fact that only few neurons fire when a cognitive task is performed i.e. if you take a snapshot of neurons in a brain, it is highly likely that you will only see less than ~2% neurons in an active state. An SDR consists of thousands of bits where at any point in time a small percentage of the bits are 1’s and the rest are 0’s. The bits in SDR corresponds to neurons in the brain, a 1 being a relatively active neuron and a 0 being a relatively inactive neuron.</p>
+<div class="figure align-default" id="id1">
+<img alt="_images/sdr.png" src="_images/sdr.png" />
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Sparse distributed representations.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="encoding">
+<h2>Encoding<a class="headerlink" href="#encoding" title="Permalink to this headline">¶</a></h2>
+<p>The encoder converts the native format of the data into an SDR that can be fed into an HTM system. The encoder is responsible for determining which output bits should be ones, and which should be zeros, for a given input value in such a way as to capture the important semantic characteristics of the data. Similar input values should produce highly overlapping SDRs. This can be thought to be analogous with functions of the human sensory organs for instance converting frequencies and amplitudes of sounds into a set of Sparse distributed Representations. Certain properties that should be taken into note while encoding a sensory data are,</p>
+<ul class="simple">
+<li><p>Semantically similar data should result in SDRs with overlapping active bits.</p></li>
+<li><p>Same input should always produce the same SDR as an output.</p></li>
+<li><p>The output should have the same dimensionality for all the inputs.</p></li>
+<li><p>The output should have similar sparsity for all inputs and have enough one bits to deal with noise and subsampling.</p></li>
+</ul>
+</div>
+<div class="section" id="spatial-pooling">
+<h2>Spatial Pooling<a class="headerlink" href="#spatial-pooling" title="Permalink to this headline">¶</a></h2>
+<p>Spatial pooling Algorithm is for solving problems to represent the input active neurons (comping from sensory or motor organs) to make that the cortex learn the pattern of sequences. It accepts the input vector of different sizes and represents it into sparse vectors of same size(It kind of normalises it). The output of the Spatial Pooler represents the mini columns i.e the pyramidal neuron in the cortices. It posses certain properties like maintaining a fixed sparsity i.e no matter how many bits are on and off in the input the spatial pooler need to maintain the fixed sparsity and to maintain the overlap properties i.e two similar inputs should produce similar outputs in the columns.</p>
+<div class="figure align-default" id="id2">
+<img alt="_images/spooling.png" src="_images/spooling.png" />
+<p class="caption"><span class="caption-number">Fig. 5 </span><span class="caption-text">Spatial pooling.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="learning">
+<h2>Learning<a class="headerlink" href="#learning" title="Permalink to this headline">¶</a></h2>
+<p>Learning happens only in those columns of the Spatial Pooler which are active. All the connections that are falling in the input space, the permeance value will increase for them i,e the synaptic connection between them will strengthen while any connections that fall outside of the input space for those the permeance value will be decremented . Learning Spatial Pooler learns better in comparison to the Random Spatial Pooler. This step has been basically derived from the concept ‘Hebbian Learning: Neurons that fire together wire together ’.</p>
+<p>For instance, in the diagram given below for any given column in a Spatial Pooler those cell that are connected to the active cells in the input space (i.e which are in green) their permeance will be incremented else those connected outside the input space their permeance will be decremented(the one’s in grey). No inactive column will learn anything.</p>
+<div class="figure align-default" id="id3">
+<img alt="_images/learning.png" src="_images/learning.png" />
+<p class="caption"><span class="caption-number">Fig. 6 </span><span class="caption-text">Learning in spatial pooler.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="boosting">
+<h2>Boosting<a class="headerlink" href="#boosting" title="Permalink to this headline">¶</a></h2>
+<p>In order for a column in a Spatial pooler to exist it should be a winning column i.e the overlap score should be above some threshold value while non-winning columns are inhibited from learning. Only the winner columns can update their permanence values. Boosting helps to change the overlap score before the inhibition occurs giving less active columns a better chance to express themselves and diminishing columns that seem overactive . Boosting on better enables the learning of input data i.e it improves the efficiency. In other words we can say that the columns that have low overlap score are boosted so that they can better express themselves and all the columns with higher overlap score are inhibited because they are expressing themselves too much.</p>
+</div>
+<div class="section" id="temporal-pooling">
+<h2>Temporal pooling<a class="headerlink" href="#temporal-pooling" title="Permalink to this headline">¶</a></h2>
+<p>Temporal Pooling enables us to understand the sequential pattern over time. It learns the sequences of the active column from the Spatial Pooler and predicts what spatial pattern in coming next based on the temporal context of each input.</p>
+<p>There are two primary steps of the Temporal Pooling algorithm. First, which cells within active columns will become active at a certain timestamp second, once the activation has been identified choose a set of cells to be in predictive state i.e those cells which will be firing on the next timestamp. Here , in this biological pyramidal neuron the proximal synapses lead directly to action potentials i.e they enable the learning of the sequence whereas patterns detected on the basal and apical dendrites depolarize the cell, representing predictions i.e cells that will fire at the next timestamp. Generally, at the first timestamp ‘Bursting’ occurs because their is no predictive state and after the first timestamp some cells become predictive which are all connected to the current firing cells. These cells will fire for the next timestamp.</p>
+<p>Suppose, you are inputing the pattern ABCD and XBCY and you want the Temporal Memory to learn the sequence. After the input pattern has been converted to SDR and spatial columns activate the set of active neurons during the learning of sequence phase i.e TM phase when the columns sees the data for the first time, none of them are in predictive phase so ‘Bursting’ occurs meaning all the cells of the mini columns tries to learn that sequence and gets bursted . Once the column has learnt the sequence only a particular cell of the mini column gets activated and at the next time stamp those predictive cells gets activated.</p>
+<div class="figure align-default" id="id4">
+<img alt="_images/tpooling.png" src="_images/tpooling.png" />
+<p class="caption"><span class="caption-number">Fig. 7 </span><span class="caption-text">Learning a sequence in temporal memory.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p>After the sequence is learned by the Temporal Memory upon inputting the A following sequence BC is predicted and upon inputting the sequence BC both D and Y is given as output as the temporal memory learns both the sequences ABCD and XBCY.</p>
+<p>HTM has been implemented to industrial use and applied to various areas such as,</p>
+<ul class="simple">
+<li><p>HTM for Anomaly Detection.</p></li>
+<li><p>Rouge Behavior Detection</p></li>
+<li><p>Geospatial Tracking</p></li>
+<li><p>HTM for stocks</p></li>
+<li><p>Natural language Processing</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="markdown4.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">HTM Model Structure</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="markdown6.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Anomaly Detection with HTM</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By AIOps<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
